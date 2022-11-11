@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="addStyle.css" />
+  </head>
+  <body>
+    <a href="index.html">Főoldal</a>
+    <h2>Employee Information</h2>
+    <form action="" method="post">
+      <table>
+        <tr>
+          <td>Alapadatok</td>
+          <td>Márka, típus</td>
+          <td><input type="text" id="marka" name="marka" class="nagy" /></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td></td>
+          <td>Gyártási év</td>
+          <td><input type="text" id="ev" name="ev" class="kis" /></td>
+          <td>Km-ek száma</td>
+          <td><input type="text" id="km" name="km" class="kis" /></td>
+          <td>Minek használta előtte</td>
+          <td>
+            <input type="text" id="hasznalt" name="hasznalt" class="kis" />
+          </td>
+          <td>Műszaki vizsga érvényesség</td>
+          <td><input type="text" id="muszaki" name="muszaki" class="kis" /></td>
+          <td>Rendszám</td>
+          <td>
+            <input type="text" id="rendszam" name="rendszam" class="kis" />
+          </td>
+        </tr>
+        <tr>
+          <td>Teljesítmény</td>
+          <td>Motor mérete</td>
+          <td><input type="text" id="motor" name="motor" class="kis" /></td>
+          <td>Lóerők száma</td>
+          <td><input type="text" id="loero" name="loero" class="kis" /></td>
+          <td>Gyorsulás</td>
+          <td>
+            <input type="text" id="gyorsulas" name="gyorsulas" class="kis" />
+          </td>
+          <td>Végsebesség</td>
+          <td>
+            <input type="text" id="sebesseg" name="sebesseg" class="kis" />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Max fordulatszám</td>
+          <td>
+            <input type="text" id="fordulat" name="fordulat" class="kis" />
+          </td>
+          <td>Súly</td>
+          <td><input type="text" id="suly" name="suly" class="kis" /></td>
+          <td>Sebváltó típusa</td>
+          <td>
+            <input
+              type="text"
+              id="sebvaltoTipus"
+              name="sebvaltoTipus"
+              class="kis"
+            />
+          </td>
+          <td>Sebességek száma</td>
+          <td>
+            <input
+              type="text"
+              id="sebvaltoSzam"
+              name="sebvaltoSzam"
+              class="kis"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Egyéb</td>
+          <td>Fogyasztás</td>
+          <td>
+            <input type="text" id="fogyasztas" name="fogyasztas" class="kis" />
+          </td>
+          <td>Benzin típusa</td>
+          <td><input type="text" id="benzin" name="benzin" class="kis" /></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td></td>
+          <td>Biztonság</td>
+          <td>
+            <input type="text" id="biztonsag" name="biztonsag" class="nagy" />
+          </td>
+          <td>Átalakítás</td>
+          <td>
+            <input type="text" id="atalakitas" name="atalakitas" class="nagy" />
+          </td>
+          <td>Kiegészítés</td>
+          <td>
+            <input
+              type="text"
+              id="kiegeszites"
+              name="kiegeszites"
+              class="nagy"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="sendPost()" id="sub" type="submit" value="Submit">
+              Add
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="add.js"></script>
+  </body>
+</html>
