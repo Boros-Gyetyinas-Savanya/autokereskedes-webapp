@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Add Employee</title>
+    <title>Add Car</title>
     <link rel="stylesheet" href="addStyle.css" />
   </head>
   <body>
-    <a href="index.html">Főoldal</a>
-    <h2>Employee Information</h2>
+    <div class="Gomb"><a href="index.html">Főoldal</a></div>
+
+    <h2 id="addCim">Autó adatai</h2>
     <form action="" method="post">
       <table>
         <tr>
-          <td>Alapadatok</td>
-          <td>Márka, típus</td>
+          <td class="hatter">Alapadatok</td>
+          <td class="hatter">Márka, típus<span style="color: red">*</span></td>
           <td><input type="text" id="marka" name="marka" class="nagy" /></td>
         </tr>
       </table>
       <table>
         <tr>
           <td></td>
-          <td>Gyártási év</td>
+          <td class="hatter">Gyártási év<span style="color: red">*</span></td>
           <td><input type="text" id="ev" name="ev" class="kis" /></td>
-          <td>Km-ek száma</td>
+          <td class="hatter">Km-ek száma<span style="color: red">*</span></td>
           <td><input type="text" id="km" name="km" class="kis" /></td>
-          <td>Minek használta előtte</td>
+          <td class="hatter">
+            Minek használta előtte<span style="color: red">*</span>
+          </td>
           <td>
             <input type="text" id="hasznalt" name="hasznalt" class="kis" />
           </td>
-          <td>Műszaki vizsga érvényesség</td>
+          <td class="hatter">
+            Műszaki vizsga érvényesség<span style="color: red">*</span>
+          </td>
           <td><input type="text" id="muszaki" name="muszaki" class="kis" /></td>
-          <td>Rendszám</td>
+          <td class="hatter">Rendszám<span style="color: red">*</span></td>
           <td>
             <input type="text" id="rendszam" name="rendszam" class="kis" />
           </td>
         </tr>
         <tr>
-          <td>Teljesítmény</td>
-          <td>Motor mérete</td>
+          <td class="hatter">Teljesítmény</td>
+          <td class="hatter">Motor mérete</td>
           <td><input type="text" id="motor" name="motor" class="kis" /></td>
-          <td>Lóerők száma</td>
+          <td class="hatter">Lóerők száma</td>
           <td><input type="text" id="loero" name="loero" class="kis" /></td>
-          <td>Gyorsulás</td>
+          <td class="hatter">Gyorsulás</td>
           <td>
             <input type="text" id="gyorsulas" name="gyorsulas" class="kis" />
           </td>
-          <td>Végsebesség</td>
+          <td class="hatter">Végsebesség</td>
           <td>
             <input type="text" id="sebesseg" name="sebesseg" class="kis" />
           </td>
         </tr>
         <tr>
           <td></td>
-          <td>Max fordulatszám</td>
+          <td class="hatter">Max fordulatszám</td>
           <td>
             <input type="text" id="fordulat" name="fordulat" class="kis" />
           </td>
-          <td>Súly</td>
+          <td class="hatter">Súly</td>
           <td><input type="text" id="suly" name="suly" class="kis" /></td>
-          <td>Sebváltó típusa</td>
+          <td class="hatter">Sebváltó típusa</td>
           <td>
             <input
               type="text"
@@ -65,7 +70,7 @@
               class="kis"
             />
           </td>
-          <td>Sebességek száma</td>
+          <td class="hatter">Sebességek száma</td>
           <td>
             <input
               type="text"
@@ -76,27 +81,27 @@
           </td>
         </tr>
         <tr>
-          <td>Egyéb</td>
-          <td>Fogyasztás</td>
+          <td class="hatter">Egyéb</td>
+          <td class="hatter">Fogyasztás</td>
           <td>
             <input type="text" id="fogyasztas" name="fogyasztas" class="kis" />
           </td>
-          <td>Benzin típusa</td>
+          <td class="hatter">Benzin típusa</td>
           <td><input type="text" id="benzin" name="benzin" class="kis" /></td>
         </tr>
       </table>
       <table>
         <tr>
           <td></td>
-          <td>Biztonság</td>
+          <td class="hatter">Biztonság</td>
           <td>
             <input type="text" id="biztonsag" name="biztonsag" class="nagy" />
           </td>
-          <td>Átalakítás</td>
+          <td class="hatter">Átalakítás</td>
           <td>
             <input type="text" id="atalakitas" name="atalakitas" class="nagy" />
           </td>
-          <td>Kiegészítés</td>
+          <td class="hatter">Kiegészítés</td>
           <td>
             <input
               type="text"
@@ -108,7 +113,13 @@
         </tr>
         <tr>
           <td>
-            <button onclick="sendPost()" id="sub" type="submit" value="Submit">
+            <button
+              class="hatter"
+              onclick="sendPost()"
+              id="sub"
+              type="submit"
+              value="Submit"
+            >
               Add
             </button>
           </td>
