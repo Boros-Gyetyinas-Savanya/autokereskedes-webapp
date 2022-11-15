@@ -1,5 +1,47 @@
+.Gomb {
+  background-color: rgba(12, 47, 161, 0.7);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgba(206, 202, 202, 0.3);
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/*prettier-ignore*/
+.hatter {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+  border-radius: 15px;
+  text-align: center;
+}
+
+input {
+  border-radius: 10px;
+}
+
+#sub:hover {
+  background-color: rgba(190, 190, 190, 0.5);
+}
+
+#addCim {
+  background-color: rgba(209, 177, 34, 0.7);
+  width: 275px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
-  background-color: rgba(0, 255, 255, 0.226);
+  /*prettier-ignore*/
+  background-image: linear-gradient(rgba(73, 98, 134,0.40),rgba(73,98,134,0.40)),url(addhoz.jpg);
+  background-size: cover;
+  /*background-position: center;*/
 }
 
 .kis {
