@@ -34,11 +34,11 @@ function view(data, request, id) {
         // dictionary: funkció nélküli objektum
         div.innerHTML =
           /* ID */
-          "<td>" +
+          "<td class='hatter'>" +
           query.id +
           "</td>" +
           /* Márka, típus */
-          "<td><input id='marka" +
+          "<td class='hatter'><input id='marka" +
           query.id +
           "' placeholder='" +
           query.marka +
@@ -46,7 +46,7 @@ function view(data, request, id) {
           query.marka +
           "'/></td>" +
           /* Gyártási év */
-          "<td><input id='ev" +
+          "<td class='hatter'><input id='ev" +
           query.id +
           "' placeholder='" +
           query.ev +
@@ -54,7 +54,7 @@ function view(data, request, id) {
           query.ev +
           "'/></td>" +
           /* km-ek száma */
-          "<td><p>" +
+          "<td class='hatter'><p>" +
           query.km +
           " km</p><input id='km" +
           query.id +
@@ -64,7 +64,7 @@ function view(data, request, id) {
           query.km +
           "'/></td>" +
           /* Minek használták előtte */
-          "<td><input id='hasznalt" +
+          "<td class='hatter'><input id='hasznalt" +
           query.id +
           "' placeholder='" +
           query.hasznalt +
@@ -72,7 +72,7 @@ function view(data, request, id) {
           query.hasznalt +
           "'/></td>" +
           /* Műszaki vizsga érvényessége */
-          "<td><input id='muszaki" +
+          "<td class='hatter'><input id='muszaki" +
           query.id +
           "' placeholder='" +
           query.muszaki +
@@ -80,7 +80,7 @@ function view(data, request, id) {
           query.muszaki +
           "'/></td>" +
           /* Rendszám */
-          "<td><input id='rendszam" +
+          "<td class='hatter'><input id='rendszam" +
           query.id +
           "' placeholder='" +
           query.rendszam +
@@ -88,7 +88,7 @@ function view(data, request, id) {
           query.rendszam +
           "'/></td>" +
           /* Motor mérete */
-          "<td><p>" +
+          "<td class='hatter'><p>" +
           query.motor +
           " cm3</p><input id='motor" +
           query.id +
@@ -98,7 +98,7 @@ function view(data, request, id) {
           query.motor +
           "'/></td>" +
           /* Lóerők száma */
-          "<td><input id='loero" +
+          "<td class='hatter'><input id='loero" +
           query.id +
           "' placeholder='" +
           query.loero +
@@ -106,7 +106,7 @@ function view(data, request, id) {
           query.loero +
           "'/></td>" +
           /* Gyorsulás */
-          "<td><p>" +
+          "<td class='hatter'><p>" +
           query.gyorsulas +
           " s</p><input id='gyorsulas" +
           query.id +
@@ -116,7 +116,7 @@ function view(data, request, id) {
           query.gyorsulas +
           "'/></td>" +
           /* Végsebesség */
-          "<td><p>" +
+          "<td class='hatter'><p>" +
           query.sebesseg +
           " km/h</p><input id='sebesseg" +
           query.id +
@@ -126,7 +126,7 @@ function view(data, request, id) {
           query.sebesseg +
           "'/></td>" +
           /* Maximális fordulatszám */
-          "<td><input id='fordulat" +
+          "<td class='hatter'><input id='fordulat" +
           query.id +
           "' placeholder='" +
           query.fordulat +
@@ -134,7 +134,7 @@ function view(data, request, id) {
           query.fordulat +
           "'/></td>" +
           /* Súly */
-          "<td><p>" +
+          "<td class='hatter'><p>" +
           query.suly +
           " kg</p><input id='suly" +
           query.id +
@@ -144,7 +144,7 @@ function view(data, request, id) {
           query.suly +
           "'/></td>" +
           /* Sebváltó típusa */
-          "<td><input id='sebvaltoTipus" +
+          "<td class='hatter'><input id='sebvaltoTipus" +
           query.id +
           "' placeholder='" +
           query.sebvaltoTipus +
@@ -152,7 +152,7 @@ function view(data, request, id) {
           query.sebvaltoTipus +
           "'/></td>" +
           /* Sebességek száma */
-          "<td><input id='sebvaltoSzam" +
+          "<td class='hatter'><input id='sebvaltoSzam" +
           query.id +
           "' placeholder='" +
           query.sebvaltoSzam +
@@ -160,7 +160,7 @@ function view(data, request, id) {
           query.sebvaltoSzam +
           "'/></td>" +
           /* Fogyasztás */
-          "<td><p>" +
+          "<td class='hatter'><p>" +
           query.fogyasztas +
           " l</p><input id='fogyasztas" +
           query.id +
@@ -170,7 +170,7 @@ function view(data, request, id) {
           query.fogyasztas +
           "'/></td>" +
           /* Benzin típusa */
-          "<td><input id='benzin" +
+          "<td class='hatter'><input id='benzin" +
           query.id +
           "' placeholder='" +
           query.benzin +
@@ -178,7 +178,7 @@ function view(data, request, id) {
           query.benzin +
           "'/></td>" +
           /* Biztonság */
-          "<td><input id='biztonsag" +
+          "<td class='hatter'><input id='biztonsag" +
           query.id +
           "' placeholder='" +
           query.biztonsag +
@@ -186,7 +186,7 @@ function view(data, request, id) {
           query.biztonsag +
           "'/></td>" +
           /* Átalakítás */
-          "<td><input id='atalakitas" +
+          "<td class='hatter'><input id='atalakitas" +
           query.id +
           "' placeholder='" +
           query.atalakitas +
@@ -194,7 +194,7 @@ function view(data, request, id) {
           query.atalakitas +
           "'/></td>" +
           /* Kiegészítés */
-          "<td><input id='kiegeszites" +
+          "<td class='hatter'><input id='kiegeszites" +
           query.id +
           "' placeholder='" +
           query.kiegeszites +
