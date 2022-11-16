@@ -39,7 +39,7 @@ a {
 
 body {
   /*prettier-ignore*/
-  background-image: linear-gradient(rgba(73, 98, 134,0.40),rgba(73,98,134,0.40)),url(addhoz.jpg);
+  background-image: linear-gradient(rgba(66, 96, 138, 0.55),rgba(66,96,138,0.55)),url(addhoz.jpg);
   background-size: cover;
   /*background-position: center;*/
 }
