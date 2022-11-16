@@ -63,10 +63,16 @@ def deleterecord():
         try:
             cur = con.cursor()
             #?: Amit felsorolsz utána, az a ? (itt az id)
-            cur.execute("delete from Cars where id = ?", id)
+            query = f"delete from Cars where id = '{id}'"
+            print(query)
+            cur.execute(query)
+            print("Sikerült")
             msg = "record successfully deleted"
         except:
             msg = "can't be deleted"
+        finally:
+            return msg
+            con.close()
 
 @app.route("/updatedetails/", methods=["POST"])
 def updaterecord():
